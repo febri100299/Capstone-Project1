@@ -1,0 +1,545 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #EEF0E5;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EEF0E5;
+    padding: 10px 20px;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    border-bottom: 2px solid #304D30;
+    z-index: 1000;
+    
+  }
+  
+  .navbar-brand {
+    color: #304D30;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navbar-menu li {
+    margin-left: 20px;
+  }
+  
+  .navbar-menu li a {
+    color: #304D30;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .navbar-menu li a:hover {
+    color: #ac6612;
+    border-radius: 4px;
+  }
+  
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .hamburger span {
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: 0.3s;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .container {
+    display: grid;
+    grid-template-columns: 70% 30%;
+  }
+  
+  .left-div {
+    height: 560px;
+    display: flex;
+    padding-top: 150px;
+    padding-left: 50px;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .right-div {
+    height: 560px;
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 50px;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .left-div {
+    background-color: #EEF0E5;
+  }
+  
+  .right-div {
+    background-color: #EEF0E5;
+  }
+  
+  .container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    
+  }
+  
+  .rounded-rectangle {
+    width: 200px;  /* Panjang persegi panjang */
+    height: 330px; /* Lebar persegi panjang */
+    background-color: #f0f0f0;
+    background-image: url(./images/9321e2bf-50d3-4bea-acc9-821935e41a50.jpeg);
+    background-size: cover; /* Ensures the image covers the whole container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 95px;  /* Membuat sisi cembung */
+    color: #333;
+    font-size: 16px;
+    text-align: center;
+    border: 10px solid #B6C4B6;  /* Border tebal */
+    overflow: hidden; /* Agar gambar mengikuti bentuk oval */
+  }
+  
+  .text-container {
+    
+    text-align: left;
+  }
+  
+  .large-text {
+    font-size: 62px;
+    color: #304D30;  /* Ukuran teks besar */
+  }
+  
+  .medium-text {
+    font-size: 32px;
+    color: #304D30;  /* Ukuran teks sedang */
+  }
+  
+  .small-text {
+    font-size: 18px;
+    color: #304D30;  /* Ukuran teks kecil */
+  }
+  
+  .green-line {
+    width: 43%; /* Panjang garis */
+    height: 10px; /* Tebal garis */
+    background-color: green; /* Warna garis */
+    margin-top: 10px; /* Jarak atas opsional */
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .container3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Membuat 4 kolom dengan lebar yang sama */
+    gap: 10px; /* Jarak antara setiap div */
+    height: 400px;
+    
+  }
+  
+  .box {
+    
+    padding: 20px;
+    
+  }
+  
+  .box1 {
+    
+    padding-left: 50px;
+    padding-top: 50px;
+  }
+  
+  .square {
+    width: 300px;
+    height: 300px;
+    background-image: url(./images/top-view-eco-friendly-recycle-sign.jpg);
+    background-size: cover; /* Ensures the image covers the whole container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    
+    
+  }
+  
+  .container4 {
+    text-align: center;
+    padding-top: 70px; /* Untuk membuat teks berada di tengah */
+  }
+  
+  .large-text4 {
+    font-size: 24px; /* Ukuran teks besar */
+    font-weight: bold; /* Teks tebal */
+    color: #333; /* Warna teks */
+  }
+  
+  .small-text4 {
+    font-size: 16px; /* Ukuran teks kecil */
+    color: #666; /* Warna teks */
+    padding-bottom: 10px;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #304D30;; /* Warna latar belakang tombol */
+    color: #fff; /* Warna teks */
+    text-decoration: none;
+    border-radius: 20px; /* Membuat sudut tombol melengkung */
+    border: none;
+    cursor: pointer;
+    
+  }
+  
+  .button:hover {
+    background-color: #0056b3; /* Warna latar belakang tombol saat di-hover */
+  }
+  
+  .bagian1 {
+    width: 100%; /* Lebar 100% dari container induk */
+    height: 550px; /* Tinggi 400px */
+    background-image: url(./images/close-up-water-droplets-leaf.jpg);
+    background-size: cover; /* Ensures the image covers the whole container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: fixed;
+    padding-left: 50px;
+    padding-top: 100px;
+  }
+  
+  .bagian2 {
+    width: 100%; /* Lebar 100% dari container induk */
+    height: 500px; /* Tinggi 400px */
+    background-color: #e2ede5; /* Warna latar belakang */
+    padding-left: 50px;
+    padding-top: 100px;
+  }
+  
+  
+  
+  
+  
+  .grid-containerv {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 0px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .boxv {
+    background-color: #B6C4B6;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .box-leftv{
+    height: 420px;
+    width: 300px;
+    background-color: rgb(14, 76, 76);
+    border-top-left-radius: 30px; /* Sudut kiri atas */
+    border-bottom-left-radius: 30px; /* Sudut kanan bawah */
+    background-image: url(./images/recycle-concept-with-woman-collecting-trash.jpg);
+    background-size: cover; /* Ensures the image covers the whole container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+  }
+  
+  .box-rightv {
+    height: 420px;
+    width: 450px;
+    background-color: rgb(252, 253, 253);
+    border-top-right-radius: 30px; /* Sudut kiri atas */
+    border-bottom-right-radius: 30px; /* Sudut kanan bawah */
+  }
+  
+  .box-centerv {
+    height: 470px;
+    width: 300px;
+    border-radius: 30px;
+  }
+  
+  
+  
+  
+  
+  
+  .bagian5 {
+    width: 100%; /* Lebar 100% dari container induk */
+    height: 350px; /* Tinggi 400px */
+    background-color: #B6C4B6;
+    padding-top: 110px;
+  }
+  
+  .container6 {
+    text-align: center;
+    
+  }
+  
+  .large-text5 {
+    font-size: 28px; /* Ukuran teks besar */
+    font-weight: bold; /* Teks tebal */
+    color: #304D30; /* Warna teks */
+  }
+  
+  .small-text5 {
+    font-size: 16px; /* Ukuran teks kecil */
+    color: #304D30; /* Warna teks */
+    padding-bottom: 20px;
+  }
+  
+  
+  .bagian3 {
+    width: 100%; /* Lebar 100% dari container induk */
+    height: 280px; /* Tinggi 400px */
+    background-color: white; /* Warna latar belakang */
+    padding-top: 90px;
+    
+  }
+  
+  .container7 {
+    text-align: left;
+    padding-left: 50px;
+    padding-bottom: 50px;    
+  }
+  
+  .large-text6 {
+    font-size: 28px; /* Ukuran teks besar */
+    font-weight: bold; /* Teks tebal */
+    color: #304D30; /* Warna teks */
+  }
+  
+  .small-text6 {
+    font-size: 16px; /* Ukuran teks kecil */
+    color: #304D30; /* Warna teks */
+    padding-bottom: 20px;
+  }
+  
+  
+  .text1 {
+    font-size: 24px; /* Ukuran teks pertama */
+    color: #f1ebeb; /* Warna teks pertama */
+    font-size: 35px;
+    padding-bottom: 20px;
+  }
+  
+  .text2 {
+    font-size: 16px; /* Ukuran teks kedua */
+    color: #f1ebeb; /* Warna teks kedua */
+  }
+  
+  
+  .aboutus {
+    text-align: left;
+    color: #0c3f19;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  .about-p{
+    text-align: left;
+    color: #0c3f19;
+    font-size: 15px;
+    padding-top: 20px;
+  
+  }
+  
+  .button-aboutus {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #304D30;; /* Warna latar belakang tombol */
+    color: #fff; /* Warna teks */
+    text-decoration: none;
+    border-radius: 20px; /* Membuat sudut tombol melengkung */
+    border: none;
+    cursor: pointer;
+    
+    
+  }
+  
+  .button-aboutus:hover {
+    background-color: #0056b3; /* Warna latar belakang tombol saat di-hover */
+  }
+  
+  .b-about{
+    text-align: left;
+    padding-top: 30px;
+  }
+  
+  .box-rightv-p {
+    color: #0c3f19;
+    font-size: 18px;
+    text-align: left;
+    font-weight: bold;
+    
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  footer {
+    margin-top: auto;
+    background-color: #0c3f19;
+    color: white;
+    padding: 10px 20px;
+    height: 155px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+  }
+  
+  .right-text {
+    margin: 0;
+    padding-right: 80px;
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
+  
+  .footer-line {
+    width: 100%; /* Panjang garis */
+    height: 2px; /* Tebal garis */
+    background-color: rgb(229, 235, 229); /* Warna garis */
+    margin-top: 95px; /* Jarak atas opsional */
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-p {
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .f-button{
+    padding-right: 115px;
+  }
+  
+  .button-footer {
+    display: flex;
+    padding: 10px 20px;
+    background-color: rgb(229, 235, 229); /* Warna latar belakang tombol */
+    color: #0c3f19; /* Warna teks */
+    text-decoration: none;
+    border-radius: 20px; /* Membuat sudut tombol melengkung */
+    border: none;
+    cursor: pointer;
+    float: right;
+    
+    
+  }
+  
+  .button-footer:hover {
+    background-color: #0056b3; /* Warna latar belakang tombol saat di-hover */
+  }
+  
+  
+  
+  
+  
+    /* Add this to styles.css */
+  
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+  }
+  
+  .navbar-menu {
+      display: flex;
+      list-style: none;
+  }
+  
+  .navbar-menu li {
+      margin: 0 10px;
+  }
+  
+  .navbar-toggle {
+      display: none;
+      cursor: pointer;
+  }
+  
+  .navbar-toggle i {
+      font-size: 24px;
+  }
+  
+  /* Mobile and Tablet styles */
+  @media (max-width: 768px) {
+      .navbar-menu {
+          display: none;
+          flex-direction: column;
+          width: 100%;
+          position: absolute;
+          top: 60px;
+          left: 0;
+          background-color: white;
+      }
+      
+      .navbar-menu.active {
+          display: flex;
+      }
+      
+      .navbar-toggle {
+          display: block;
+      }
+  }
+  
